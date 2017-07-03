@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="ARAR017399" name="rules.RuleSpec" skipped="0" tests="5" time="0.701" timestamp="2017-07-03T02:50:10">
+  <properties />
+  <testcase classname="rules.RuleSpec" name="test rule should reflect this: [ this.inputValue == &quot;03200&quot; ]" time="0.435" />
+  <testcase classname="rules.RuleSpec" name="test rule should reflect this: [ this.inputValue == &quot;03200&quot; || this.inputValue == &quot;91820&quot; ]" time="0.068" />
+  <testcase classname="rules.RuleSpec" name="test rule should reflect this: [ this.inputValue == &quot;03200&quot; || this.inputValue == &quot;91820&quot; || this.inputValue == &quot;05500&quot; ]" time="0.028" />
+  <testcase classname="rules.RuleSpec" name="test rule should reflect this: [ (this.inputValue == &quot;03200&quot; || this.inputValue == &quot;91820&quot; || this.inputValue == &quot;05500&quot;) &amp;&amp; this.inputValue != &quot;00000&quot; ]" time="0.064" />
+  <testcase classname="rules.RuleSpec" name="test rule should reflect this: [ (this.inputValue == &quot;03200&quot; &amp;&amp; this.inputValue == &quot;91820&quot; &amp;&amp; this.inputValue == &quot;05500&quot;) || this.inputValue != &quot;06600&quot; ]" time="0.045" />
+  <system-out><![CDATA[--Output from test rule should reflect this: [ this.inputValue == "03200" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ]--
+--Output from test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") && this.inputValue != "00000" ]--
+--Output from test rule should reflect this: [ (this.inputValue == "03200" && this.inputValue == "91820" && this.inputValue == "05500") || this.inputValue != "06600" ]--
+]]></system-out>
+  <system-err><![CDATA[--Output from test rule should reflect this: [ this.inputValue == "03200" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ]--
+--Output from test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") && this.inputValue != "00000" ]--
+--Output from test rule should reflect this: [ (this.inputValue == "03200" && this.inputValue == "91820" && this.inputValue == "05500") || this.inputValue != "06600" ]--
+]]></system-err>
+</testsuite>
