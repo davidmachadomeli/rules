@@ -1,22 +1,25 @@
 Testsuite: rules.RuleSpec
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.645 sec
 ------------- Standard Output ---------------
 --Output from test rule should reflect this: [ this.inputValue == "03200" ]--
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ]--
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ]--
 --Output from test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") && this.inputValue != "00000" ]--
---Output from test rule should reflect this: [ (this.inputValue == "03200" && this.inputValue == "91820" && this.inputValue == "05500") || this.inputValue != "06600" ]--
+--Output from test rule should reflect this: [ (this.inputValue != "03200" && this.inputValue != "91820" && this.inputValue != "05500") || this.inputValue == "06600" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || ( this.inputValue != "00000" && this.inputValue != "91820"  ) || this.inputValue == "05500" ]--
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
 --Output from test rule should reflect this: [ this.inputValue == "03200" ]--
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ]--
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ]--
 --Output from test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") && this.inputValue != "00000" ]--
---Output from test rule should reflect this: [ (this.inputValue == "03200" && this.inputValue == "91820" && this.inputValue == "05500") || this.inputValue != "06600" ]--
+--Output from test rule should reflect this: [ (this.inputValue != "03200" && this.inputValue != "91820" && this.inputValue != "05500") || this.inputValue == "06600" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || ( this.inputValue != "00000" && this.inputValue != "91820"  ) || this.inputValue == "05500" ]--
 ------------- ---------------- ---------------
 
-Testcase: test rule should reflect this: [ this.inputValue == "03200" ] took 0.435 sec
-Testcase: test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ] took 0.069 sec
-Testcase: test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ] took 0.028 sec
-Testcase: test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") && this.inputValue != "00000" ] took 0.064 sec
-Testcase: test rule should reflect this: [ (this.inputValue == "03200" && this.inputValue == "91820" && this.inputValue == "05500") || this.inputValue != "06600" ] took 0.045 sec
+Testcase: test rule should reflect this: [ this.inputValue == "03200" ] took 0.381 sec
+Testcase: test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ] took 0.044 sec
+Testcase: test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ] took 0.026 sec
+Testcase: test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") && this.inputValue != "00000" ] took 0.06 sec
+Testcase: test rule should reflect this: [ (this.inputValue != "03200" && this.inputValue != "91820" && this.inputValue != "05500") || this.inputValue == "06600" ] took 0.031 sec
+Testcase: test rule should reflect this: [ this.inputValue == "03200" || ( this.inputValue != "00000" && this.inputValue != "91820"  ) || this.inputValue == "05500" ] took 0.033 sec

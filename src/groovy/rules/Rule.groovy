@@ -1,34 +1,20 @@
 package rules
 
-import rules.operands.IOperand
-import rules.operators.NullOperator
-import rules.terms.Term
+import rules.operators.IOperator
 
 /**
  * Created by dmachado on 7/1/17.
  */
 class Rule {
 
-    private Term expression = new Term(new NullOperator())
+    private IOperator operator
 
-    void insertOperand(IOperand operand) {
-        this.expression.insertOperand(operand)
-    }
-
-    void assignOperator(IOperator operator) {
-        this.expression.assignOperator(operator)
-    }
-
-    void addOrTerm() {
-        this.expression.addOrTerm()
-    }
-
-    void addAndTerm() {
-        this.expression.addAndTerm()
+    Rule(IOperator operator) {
+        this.operator = operator
     }
 
     public Map asMap() {
-        return expression.asMap()
+        return this.operator.asMap()
     }
 
 }

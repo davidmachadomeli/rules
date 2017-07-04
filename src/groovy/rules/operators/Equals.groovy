@@ -1,13 +1,15 @@
 package rules.operators
-
 import rules.constants.OperatorType
+import rules.operands.IOperand
+
 /**
  * Created by dmachado on 7/1/17.
  */
-class EqualsOperator extends AbstractMathOperator {
+class Equals extends AbstractOperator {
 
-    EqualsOperator() {
+    Equals(IOperand... operands) {
         this.type = OperatorType.EQUALS
+        this.operands = operands
     }
 
 }

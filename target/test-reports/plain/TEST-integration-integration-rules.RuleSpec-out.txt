@@ -2,4 +2,5 @@
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ]--
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ]--
 --Output from test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") && this.inputValue != "00000" ]--
---Output from test rule should reflect this: [ (this.inputValue == "03200" && this.inputValue == "91820" && this.inputValue == "05500") || this.inputValue != "06600" ]--
+--Output from test rule should reflect this: [ (this.inputValue != "03200" && this.inputValue != "91820" && this.inputValue != "05500") || this.inputValue == "06600" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || ( this.inputValue != "00000" && this.inputValue != "91820"  ) || this.inputValue == "05500" ]--

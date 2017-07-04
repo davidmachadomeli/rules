@@ -15,7 +15,7 @@
      - All tests </h1>
 <p class="intro">
                         Executed
-                        5
+                        6
                         tests
                     
                         without a single error or failure!
@@ -46,7 +46,7 @@
 <h2>RuleSpec</h2>
 <h3>
                         Executed
-                        5
+                        6
                         tests
                     
                         without a single error or failure!
@@ -57,7 +57,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test rule should reflect this: [ this.inputValue == "03200" ]</b>
 </p>
-<p class="summary">Executed in 0.435 seconds.</p>
+<p class="summary">Executed in 0.381 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -67,7 +67,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ]</b>
 </p>
-<p class="summary">Executed in 0.068 seconds.</p>
+<p class="summary">Executed in 0.044 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -77,7 +77,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ]</b>
 </p>
-<p class="summary">Executed in 0.028 seconds.</p>
+<p class="summary">Executed in 0.026 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -87,17 +87,27 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") &amp;&amp; this.inputValue != "00000" ]</b>
 </p>
-<p class="summary">Executed in 0.064 seconds.</p>
+<p class="summary">Executed in 0.06 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="test rule should reflect this: [ (this.inputValue == &quot;03200&quot; &amp;&amp; this.inputValue == &quot;91820&quot; &amp;&amp; this.inputValue == &quot;05500&quot;) || this.inputValue != &quot;06600&quot; ]">
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test rule should reflect this: [ (this.inputValue != &quot;03200&quot; &amp;&amp; this.inputValue != &quot;91820&quot; &amp;&amp; this.inputValue != &quot;05500&quot;) || this.inputValue == &quot;06600&quot; ]">
 <div class="grid_3 alpha">
 <p>
-<span class="icon success"></span><b class="testname message success">test rule should reflect this: [ (this.inputValue == "03200" &amp;&amp; this.inputValue == "91820" &amp;&amp; this.inputValue == "05500") || this.inputValue != "06600" ]</b>
+<span class="icon success"></span><b class="testname message success">test rule should reflect this: [ (this.inputValue != "03200" &amp;&amp; this.inputValue != "91820" &amp;&amp; this.inputValue != "05500") || this.inputValue == "06600" ]</b>
 </p>
-<p class="summary">Executed in 0.045 seconds.</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test rule should reflect this: [ this.inputValue == &quot;03200&quot; || ( this.inputValue != &quot;00000&quot; &amp;&amp; this.inputValue != &quot;91820&quot;  ) || this.inputValue == &quot;05500&quot; ]">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test rule should reflect this: [ this.inputValue == "03200" || ( this.inputValue != "00000" &amp;&amp; this.inputValue != "91820"  ) || this.inputValue == "05500" ]</b>
+</p>
+<p class="summary">Executed in 0.033 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -109,7 +119,8 @@
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ]--
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ]--
 --Output from test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") &amp;&amp; this.inputValue != "00000" ]--
---Output from test rule should reflect this: [ (this.inputValue == "03200" &amp;&amp; this.inputValue == "91820" &amp;&amp; this.inputValue == "05500") || this.inputValue != "06600" ]--
+--Output from test rule should reflect this: [ (this.inputValue != "03200" &amp;&amp; this.inputValue != "91820" &amp;&amp; this.inputValue != "05500") || this.inputValue == "06600" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || ( this.inputValue != "00000" &amp;&amp; this.inputValue != "91820"  ) || this.inputValue == "05500" ]--
 </pre>
 </div>
 <div class="syserr">
@@ -118,7 +129,8 @@
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" ]--
 --Output from test rule should reflect this: [ this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500" ]--
 --Output from test rule should reflect this: [ (this.inputValue == "03200" || this.inputValue == "91820" || this.inputValue == "05500") &amp;&amp; this.inputValue != "00000" ]--
---Output from test rule should reflect this: [ (this.inputValue == "03200" &amp;&amp; this.inputValue == "91820" &amp;&amp; this.inputValue == "05500") || this.inputValue != "06600" ]--
+--Output from test rule should reflect this: [ (this.inputValue != "03200" &amp;&amp; this.inputValue != "91820" &amp;&amp; this.inputValue != "05500") || this.inputValue == "06600" ]--
+--Output from test rule should reflect this: [ this.inputValue == "03200" || ( this.inputValue != "00000" &amp;&amp; this.inputValue != "91820"  ) || this.inputValue == "05500" ]--
 </pre>
 </div>
 </div>
